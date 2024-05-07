@@ -1,0 +1,103 @@
+body{
+    
+    width: 100%; /* Ancho completo */
+    height: 200px; /* Altura de ejemplo */
+    background: url(../img/wp6147332.jpg) #F4F4F4; /* fondo con imagen en color gris, por si quedara alguna área vacía */
+    background-size: cover; /* Extender la imagen para cubrir completamente el fondo */
+    background-repeat: no-repeat; /* Evitar que se repita la imagen */
+}
+
+/* estilos paras las alertas, y las de error */
+.alerta{
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+    background: green;
+    box-shadow: 0px 1px 3px #ccc;
+    margin-bottom: 15px;
+    border-radius: 2px;
+}
+
+.alerta-error{
+    background: red;
+}
+
+/*CONTENIDO*/
+#contenedor{
+    width: 85%;
+    height: auto; 
+    min-height: auto; 
+    margin: 0px auto; /*centramos el div */
+    margin-top: 30px;  /* para separarlo del menú */
+    margin-bottom: 30px;
+}
+
+/*esqueleto-login*/
+#sidebar{
+width: 300px; /* Ancho del div */
+    height: 200px; /* Altura del div (ajusta según sea necesario) */
+    
+    margin: 0 auto; /* Esto centra el div horizontalmente */
+}
+
+
+.bloque{
+    /* para que se comporten como un bloque y lo podamos mover a nuestro antojo */
+    color: #000000;
+    display: block;
+    width: 90%;
+    margin: 0px auto; /* centrarlo dandole un margen */
+    margin-bottom: 35px;
+    background: rgb(135, 183, 194);
+    padding: 15px;
+    /* combina sombras dentro de la caja con sombras por fuera = 3D, inset = sombra interna */
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.3), 0px 3px 7px rgba(0,0,0,0.3), 0px 0px 1px #FFFFFF;
+}
+
+.bloque h3{
+    margin-bottom: 15px; /* que se separe del elemento de abajo */
+}
+
+/* estilos para el formulario */
+label,
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    display: block; /* para qwue se comporten como un bloque y los pueda mover a mi antojo */
+    width:95%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"],
+input[type="botton"],
+.boton{
+   margin-top: 5px;
+   margin-bottom: 5px;
+   display: block;
+   border-radius: 2px;
+   color: white;
+   background: #007ee5;
+   border: 1px solid #156785;
+   cursor: pointer;
+   padding: 7px;
+}
+
+/* para los botones de la barra lateral: cerrar sesion, crear entradas... */
+.botton{
+    width: 130px;
+    text-align: center; /* texto centrado dentro del boton */
+}
+
+.boton-rojo{
+    background: red;
+    border-color: #444;
+    text-align: center;
+}
